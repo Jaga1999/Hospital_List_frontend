@@ -2,7 +2,6 @@ import React from "react";
 
 export const Home = (...data) => {
   console.log(data)
-  console.log(Array.isArray(data))
   return (
     <>
       <section className="container px-4 mx-auto py-4">
@@ -82,11 +81,11 @@ export const Home = (...data) => {
                         </td>
                         <td className="px-2 py-4 whitespace-nowrap">
                           <span className="px-2 text-xs  font-semibold ">
-                            987654321 
+                            987654321 {item.phone}
                           </span>
                         </td>
                         <td className="px-4 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-300">
-                          Full Body Checkup
+                          Full Body Checkup {item.task}
                         </td>
                         <td className="px-4 py-4 whitespace-nowrap text-right text-sm font-medium">
                             Edit
